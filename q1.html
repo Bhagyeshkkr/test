@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+    <script type="text/javascript">
+     var n1,t1,sum=0;
+     var flag;
+     //for(n1=2;n1<=10;n1++)// for testing o/p- 17
+     for(n1=2;n1<=1234567;n1++)
+     {
+         flag=1;
+          //for(t1=2;t1<n1;t1++) //test
+         for(t1=2;t1<=Math.sqrt(n1);t1++)
+         {
+        
+    
+               if(n1%t1===0)
+              {
+                 flag=0;
+               }
+    
+         }
+         if(flag===1)
+         {
+             sum=sum+n1;
+         }
+     }
+    
+    document.write(' '+sum);
+    
+    
+    
+
+    
+    </script>
+    </head>
+    <body>
+    </body>
+    </html>
